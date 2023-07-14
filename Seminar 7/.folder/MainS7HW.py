@@ -9,28 +9,28 @@
 
 # **Ввод:** пара-ра-рам рам-пам-папам па-ра-па-да    
 #     **Вывод:** Парам пам-пам
-# def check_rhythm(pooh_poem):
-#     phrases = pooh_poem.split()
+def check_rhythm(pooh_poem):
+    phrases = pooh_poem.split()
 
-#     for phrase in phrases:
-#         words = phrase.split('-')
-#         vowel_counts = [count_vowels(word) for word in words]
-#         if not all(count == vowel_counts[0] for count in vowel_counts):
-#             return "Пам парам"
+    for phrase in phrases:
+        words = phrase.split('-')
+        vowel_counts = [count_vowels(word) for word in words]
+        if not all(count == vowel_counts[0] for count in vowel_counts):
+            return "Пам парам"
 
-#     return "Парам пам-пам"
+    return "Парам пам-пам"
 
-# def count_vowels(word):
-#     vowels = 'аеёиоуыэюя'
-#     count = 0
-#     for char in word:
-#         if char.lower() in vowels:
-#             count += 1
-#     return count
+def count_vowels(word):
+    vowels = 'аеёиоуыэюя'
+    count = 0
+    for char in word:
+        if char.lower() in vowels:
+            count += 1
+    return count
 
-# poem = input("Введите стихотворение Винни-Пуха: ")
-# result = check_rhythm(poem)
-# print(result)
+poem = input("Введите стихотворение Винни-Пуха: ")
+result = check_rhythm(poem)
+print(result)
 
 # Напишите функцию print_operation_table(operation, num_rows=6, num_columns=6), которая принимает в качестве аргумента 
 # функцию, вычисляющую элемент по номеру строки и столбца. Аргументы num_rows и num_columns указывают число строк и 
