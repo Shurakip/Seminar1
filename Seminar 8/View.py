@@ -1,5 +1,5 @@
 def input_num():
-    ask = int(input("1 - Добавить пользователя\n2 -Найти пользователя\n5 - Выйти "))
+    ask = int(input("1 - Добавить пользователя\n2 -Найти пользователя\n3 -Удалить пользователя\n4 -Изменить информацию\n5 - Выйти "))
     return ask
 
 def input_info():
@@ -12,3 +12,11 @@ def input_info():
 def input_char():
     char = input("Введите искомые данные - ")
     return char
+
+def input_dell():
+    dell = input("Введите данные для поиска и удаления - ")
+    return dell
+
+def input_edit():
+    edit = input("Введите данные пользователя для изменения - ")
+    return edit
